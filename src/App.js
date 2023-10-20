@@ -130,7 +130,7 @@ function App() {
             </p>
           </div>
           {filteredProductInfo.length !== 0 && (
-            <div className="w-[90%] flex flex-col mx-auto gap-3 bg-white px-2 py-3 rounded-2xl shadow-2xl md:p-7 md:w-[40rem] mt-8">
+            <div className="w-[90%] flex flex-col mx-auto gap-3 bg-white px-2 py-3 rounded-2xl shadow-2xl md:p-7 md:w-[40rem] mt-2">
               {filteredProductInfo.map((productObj, index) => (
                 <div key={index} className="w-full flex justify-between">
                   <p>{productObj.product}</p>
