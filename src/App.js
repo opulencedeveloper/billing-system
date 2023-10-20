@@ -67,13 +67,13 @@ function App() {
     );
     const existingItem = totalProducts[existingCartItemIndex];
 
-    // const updatedTotalAmount = state.totalAmount - existingItem.price;
     let updatedItems;
     if (existingItem.quantity === 1) {
       setTotalProducts((prev) => {
         updatedItems = prev.filter((item) => item.id !== productObj.id);
         return updatedItems;
       });
+      
     } else {
       setTotalProducts((prev) => {
         const updatedItem = {
