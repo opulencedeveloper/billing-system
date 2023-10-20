@@ -73,7 +73,7 @@ function App() {
         updatedItems = prev.filter((item) => item.id !== productObj.id);
         return updatedItems;
       });
-      
+
     } else {
       setTotalProducts((prev) => {
         const updatedItem = {
@@ -121,6 +121,7 @@ function App() {
           <div className="w-[90%] mx-auto flex flex-col md:w-[50rem]">
             <input
               onChange={filterProductHandler}
+              type="text"
               placeholder="Search for products eg.(Bag, Flower, Laptop, Computer)"
               className="h-14 w-full px-5"
             />
